@@ -7,7 +7,7 @@ export const useFetchEvents = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetchEventById().then(setEvent);
+    fetchEventById(id).then(setEvent);
   }, [id]);
 
   return event;
